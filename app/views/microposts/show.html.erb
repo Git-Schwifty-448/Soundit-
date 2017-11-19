@@ -7,7 +7,7 @@
 
             <div class="col s12">
                 <%# Title %>
-                
+
                 <div class="content_title_post">
                     <%= @micropost.title %> (<%= @micropost.artist %>)
                 </div>
@@ -45,7 +45,7 @@
                         <span class="_artist_title">[ Posted in <%= link_to Community.find(@micropost.community_id).title, community_path(@micropost.community_id) %> ]
                         <br><span class="_details">Comments (<%= @micropost.polycoms.count %>)
                         <% if current_user?(@micropost.user) %> |
-                                <%= link_to "Delete Post", @micropost, method: :delete, data: { confirm: "Delete this post?"}%>
+                                <%= link_to "Delete", @micropost, method: :delete, data: { confirm: "Delete this post?"}%>
                             <% end %>
                         | Posted <%= time_ago_in_words(@micropost.created_at) %> ago by <%= link_to @micropost.user.name, @micropost.user %></span>
                     </div>
@@ -123,7 +123,7 @@
 
                 <%# Comment Box %>
                 <% if logged_in? %>
-                    <span class="_title"> Add a Comment</span>    
+                    <span class="_title"> Add a Comment</span>
                     <div class="row reply_card">
                         <div class="col s8 ">
                             <%= render partial: "polycoms/form", locals: {commentable: @micropost_copy} %>
@@ -141,7 +141,7 @@
 
             </div>
         </div>
-        
+
     </div>
 
 </div>

@@ -1,16 +1,28 @@
 <div class="row">
-    <div class="col s10 offset-s1 content_card z-depth-1">
-
-        <div class="content_title">
-            Create New Playlist
+    <div class="row">
+        <div class="col l8 offset-l2 s12">
+            <div class="content_title">
+                <i class="material-icons" style="font-size: 35px">adjust</i>Create Playlist
+            </div>
         </div>
+    </div>
 
-		<%= form_for(@playlist) do |f| %>
-		  <%= render 'shared/error_messages', object: f.object %>
-		  <div class="field">
-		    <%= f.text_field :name, placeholder: "Name" %>
-		  </div>
-		  <%= f.submit "Post", class: "btn btn-primary" %>
-		<% end %>
-	</div>
+    <div class="row">
+        <div class="col l8 offset-l2 m12 s12">
+            <div class="row">
+                <div class="col l12 m12 s12 content_card z-depth-1">
+                    <div class="row">
+                        <div class="col s12">
+                            <% if logged_in? %>
+                                <%= render 'shared/playlist_form' %>
+                            <% else %>
+                                <br>
+                                Please <%= link_to "Login first. ", login_path %>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
