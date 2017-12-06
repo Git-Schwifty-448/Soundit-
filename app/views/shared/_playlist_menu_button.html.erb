@@ -1,7 +1,0 @@
-<a id="playlist-button-<%= micropost.id %>" class="playlist-menu-button dropdown-button" href="#" data-activates='dropdown<%= micropost.id %>'><i class="small material-icons">menu</i></a>
-
-<!-- Dropdown Structure -->
-<ul id='dropdown<%= micropost.id %>' class='dropdown-content'>
-	<li><%= link_to "View Post", micropost %></li>
-	<li><%= link_to "Remove From Playlist", playlist_removepost_path(playlist.id, micropost.id), method: :put %></li>
-</ul>

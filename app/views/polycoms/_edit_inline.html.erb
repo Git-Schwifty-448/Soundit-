@@ -1,8 +1,0 @@
-<%= form_for(polycom) do |f| %>
-    <%= render 'shared/error_messages', object: f.object %>
-    <div class="field">
-        <%= f.label :body %>
-        <%= f.text_area :body %>
-    </div>
-    <%= f.submit "Update Post", class: "btn button_mod" %>
-<% end %>

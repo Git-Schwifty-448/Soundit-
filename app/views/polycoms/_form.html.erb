@@ -1,7 +1,0 @@
-<% if logged_in? %>
-    <%= form_for [commentable, Polycom.new] do |form| %>
-        <%= form.hidden_field :user_id, value: current_user.id %>
-        <%= form.text_area :body, placeholder: "Replying as " + current_user.name, class: "content_card z-depth-2", style: "border: 0px;" %><br>
-        <%= form.submit :Comment, class: "btn button_mod z-depth-2" %>
-    <% end %>
-<% end %>
