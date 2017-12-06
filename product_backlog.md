@@ -57,7 +57,7 @@
 * **Status** Removed
 
 ## ~~Frontpage Filter Algorthim~~
-* ~~**Description** Ability to sort posts on the frontpage by multiple metrics ~~
+* ~~**Description** Ability to sort posts on the frontpage by multiple metrics~~
 * **Status** Removed, deemed unnecessary 
 
 ## Playlists
@@ -77,7 +77,7 @@
 * **Status** Playlists were changed to be private, thus no reason to have scoring.
 
 ## ~~playlist - ability to vote~~
-* ~~**Description** Ability for users to vote on playlists ~~
+* ~~**Description** Ability for users to vote on playlists~~
 * **Status** Playlists were changed to be private, thus no reason to have scoring.
 
 ## palylist - ability to export to Spotify, etc.
@@ -93,7 +93,7 @@
 * **Status** Complete
 
 ## Community - auto playlist generation and upkeep
-* **Description** Ability for playlists to be automatically generated ~~and continuously merged ~~ **Limited by Spotify API**
+* **Description** Ability for playlists to be automatically generated ~~and continuously merged~~ **Limited by Spotify API**
 * **Status** Complete
 
 ## Embeded services (For music hosting other than Youtube)
